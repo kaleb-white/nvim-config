@@ -1,0 +1,20 @@
+{
+	"If block": {
+		"prefix": "iff",
+		"body": ["if [[ ${1:condition} ]]; then", "\t$0", "fi"],
+		"description": "If block"
+	},
+	"Header": {
+		"prefix": "header",
+		"body": [
+			"# Description: ",
+			"# Usage: ",
+			"",
+			"log() { echo \"[INFO] \\$1\" > \"\\$(tty)\"; }",
+			"warn() { echo \"[WARN] \\$1\" > \"\\$(tty)\"; }",
+			"error() { echo \"[ERROR] \\$1\" > \"\\$(tty)\"; exit 1; }",
+			""
+		],
+		"description": "Header block"
+	}
+}
